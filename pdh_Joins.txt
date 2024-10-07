@@ -1,0 +1,24 @@
+--Canal pelo qual os pedidos foram realizados:--
+
+/*SELECT TbPedido.IdPedido, TbCanal.DescrCanal
+FROM TbPedido
+LEFT JOIN TbCanal ON TbPedido.IdCanal = TbCanal.IdCanal*/
+
+--Descreve o nome do produto, quantidade e o id do Cliente que realizou o Pedido:
+
+/*SELECT IdPedido, TbProduto.NomeProduto, Qtde, IdCliente
+FROM TbPedido
+INNER JOIN TbProduto ON TbProduto.IdProduto = TbPedido.IdProduto*/
+ 
+
+/*Endereço dos respectivos clientes:
+
+ SELECT TbCLiente.NomeCliente, TbEndereco.Logradouro, TbEndereco.Numero, Bairro
+FROM TbCLiente
+INNER JOIN TbEndereco ON TbEndereco.IdCliente = TbCLiente.IdCLiente*/
+
+/*Telefone dos respectivos clientes:
+
+SELECT TbCLiente.NomeCliente, TbTelefone.Numero
+FROM TbCLiente
+INNER JOIN TbTelefone ON TbTelefone.IdCliente = TbCLiente.IdCliente*/
